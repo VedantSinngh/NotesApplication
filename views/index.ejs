@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-black text-white">
+    <div class="container mx-auto p-4">
+        <h1 class="text-4xl font-bold text-center mb-8">Notes App</h1>
+
+        <!-- Form Section -->
+        <div class="main w-full flex justify-center items-center mb-10">
+            <div class="form p-6 bg-gray-800 rounded-md shadow-lg w-full max-w-md">
+                <form action="" method="POST">
+                    <input
+                        class="block w-full text-black rounded-md outline-none px-5 py-2 mb-4"
+                        type="text"
+                        placeholder="Title goes here.." required>
+                    <textarea
+                        class="block w-full text-black rounded-md resize-none outline-none px-5 py-2 mb-4"
+                        placeholder="Write your task details here..." rows="5" required></textarea>
+                    <input
+                        type="submit"
+                        class="bg-blue-600 hover:bg-blue-700 text-white rounded-md p-2 mt-2 cursor-pointer w-full"
+                        value="Create Task">
+                </form>
+            </div>
+        </div>
+
+        <!-- Task Display Section -->
+        <div class="task grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Task Card 1 -->
+            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
+                <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
+                <a href="#" class="text-blue-400 hover:underline">Read More</a>
+            </div>
+
+            <!-- Task Card 2 -->
+            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
+                <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
+                <a href="#" class="text-blue-400 hover:underline">Read More</a>
+            </div>
+
+            <!-- Task Card 3 -->
+            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
+                <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
+                <a href="#" class="text-blue-400 hover:underline">Read More</a>
+            </div>
+
+            <div class="task relative text-white rounded-md p-4 shadow-lg mx-auto"></div>
+                <h3 class="flex justify-center w-full border border-blue-500">No tasks found.</h3>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
