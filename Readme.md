@@ -45,7 +45,3 @@ A simple notes-making application built with Express.js and EJS, styled using Ta
 1. Open the application in your browser.
 2. Use the form to add new notes.
 3. Notes will be displayed in a grid layout.
-
-## License
-
-This project is licensed under the MIT License.
