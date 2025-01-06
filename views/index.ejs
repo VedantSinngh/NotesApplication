@@ -31,29 +31,21 @@
             </div>
         </div>
 
-        <!-- Task Display Section -->
+        <!-- <% Dynamic Task %> -->
+        <% if(files.length > 0) { %>
+            <% files.forEach(function(val) { %>
         <div class="task grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Task Card 1 -->
-            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
+            <!-- Task Card  -->
+            <div class="task bg-gray-900 text-white rounded-md p-4 shadow-lg">
                 <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
                 <a href="#" class="text-blue-400 hover:underline">Read More</a>
             </div>
-
-            <!-- Task Card 2 -->
-            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
-                <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
-                <a href="#" class="text-blue-400 hover:underline">Read More</a>
+            <% }) %>            
+        <% } else { %>
+            <div class="task relative text-white rounded-md p-4 shadow-lg mx-auto border border-blue-500">
+                <h3 class="flex justify-center w-full">No tasks found.</h3>
             </div>
-
-            <!-- Task Card 3 -->
-            <div class="task hidden bg-gray-900 text-white rounded-md p-4 shadow-lg">
-                <h1 class="text-xl font-bold mb-2">Some task goes here.</h1>
-                <a href="#" class="text-blue-400 hover:underline">Read More</a>
-            </div>
-
-            <div class="task relative text-white rounded-md p-4 shadow-lg mx-auto"></div>
-                <h3 class="flex justify-center w-full border border-blue-500">No tasks found.</h3>
-            </div>
+            <% } %>
         </div>
     </div>
 </body>
